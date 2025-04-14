@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Retry & Replay Dashboard</title></head>
+<body>
+<h1>Retry & Replay Framework Dashboard</h1>
+<form method="post" th:action="@{/replay/manual}">
+    <label>Transaction ID: <input type="text" name="transactionId"/></label>
+    <button type="submit">Replay</button>
+</form>
+</body>
+</html>
